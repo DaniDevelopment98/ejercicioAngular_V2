@@ -1,0 +1,23 @@
+<mat-card class="card">
+    <mat-card-header></mat-card-header>
+   <mat-card-title> Producto:
+    {{product.name}}
+   </mat-card-title>
+    <mat-card-content>
+      <h2>   Precio Producto: {{product.price|currency}}  </h2> 
+         <P>
+        </P>             
+         <h2>  Cantidad en Existencia:{{product.stock}}</h2>
+    </mat-card-content>
+   <mat-card-actions>
+    <button mat-flat-button color="primary">Comprar
+        <mat-icon><span  class="materials-icons orange600">
+            attach_money
+            </span></mat-icon>
+    </button>
+    
+   </mat-card-actions>
+    <mat-card-footer>
+        Descripcion del producto:<p>{{product.description}}</p>
+    </mat-card-footer>
+</mat-card>
